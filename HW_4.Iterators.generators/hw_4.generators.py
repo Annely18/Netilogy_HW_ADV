@@ -15,6 +15,15 @@ def flat_generator(list_of_lists):
             yield item
             item_index += 1
 
+list_ = [
+        ['a', 'b', 'c'],
+        ['d', 'e', 'f', 'h', False],
+        [1, 2, None]
+    ]
+
+for i in flat_generator(list_):
+    print(i)
+
 
 def test_2():
     list_of_lists_1 = [
